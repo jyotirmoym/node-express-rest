@@ -4,6 +4,4 @@ var port = process.env.PORT || 3000;
 
 var routes = require('./api/routes');
 routes(app);
-app.listen(port, function() {
-   console.log('Server started on port: ' + port);
-});
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
